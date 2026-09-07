@@ -4,6 +4,7 @@ import sendIcon from "../assets/send.svg";
 import Message from "./Message.jsx";
 
 import { useState, useEffect, useRef} from "react";
+import API from "../api/apiRoutes.js";
 
 
 //ChatBox Component
@@ -44,7 +45,7 @@ const introAI =
 
     useEffect(() => {
 
-        fetch("https://customer-support-ai-backend-production.up.railway.app/chat/history", {
+        fetch(API.CHAT_HISTORY, {
             credentials: "include"
         })
         .then(response => response.json())
@@ -101,7 +102,7 @@ async function handleSend(e){
 
        setIsTyping(true);
 
-        fetch("https://customer-support-ai-backend-production.up.railway.app/chat", {
+        fetch(API.CHAT, {
             method: "POST",
             credentials: "include",
             headers:{

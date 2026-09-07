@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Loginpage.css";
 import { useNavigate } from "react-router-dom";
+import API  from "../api/API.js";
 
 function LoginPage() {
 
@@ -13,7 +14,7 @@ function LoginPage() {
 
     async function handleLogin(){
 
-        const response = await fetch('api/auth/login', {
+        const response = await fetch(API.LOGIN, {
             method: 'POST',
             credentials: "include",
             headers: {

@@ -85,7 +85,7 @@ function Profile(){
     
     // FETCH PROFILE
     useEffect(() => {
-        fetch("https://customer-support-ai-backend-production.up.railway.app/auth/user-profile",{
+        fetch(API.USER_PROFILE,{
                     credentials: "include"
                 })
                 .then(response => {

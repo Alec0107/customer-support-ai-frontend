@@ -46,7 +46,7 @@ function Orders(){
 
     useEffect(() => {
 
-        fetch("https://customer-support-ai-backend-production.up.railway.app/orders/my-orders",{
+        fetch(API.ORDERS,{
             credentials: "include"
         })
         .then(response => {

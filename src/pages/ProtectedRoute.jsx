@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
+import API from "../api/API.js";
 
 function ProtectedRoute({ children }){
 
@@ -8,7 +9,7 @@ function ProtectedRoute({ children }){
 
     useEffect(() => {
 
-        fetch("api/auth/me",{
+        fetch(API.ME,{
             credentials: "include"
         })
         .then(response => {

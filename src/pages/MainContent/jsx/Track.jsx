@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import TrackDetails from "../component/TrackDetails.jsx"
 import "../../../pages/loader.css"
 import { use } from "react";
+import API from "../../../api/apiRoutes.js";
 
 function Track(){
 
@@ -72,7 +73,7 @@ function Track(){
 
         useEffect(() => {
 
-            fetch("https://customer-support-ai-backend-production.up.railway.app/deliveries/my-deliveries", {
+            fetch(API.DELIVERIES, {
                 credentials: "include"
             })
             .then(response => {
