@@ -11,7 +11,7 @@ function OrderDetails({ order, setSelectedOrder }) {
 
     useEffect(() => {
 
-        fetch(`http://localhost:8080/orders/${order.orderId}`, {
+        fetch(`https://customer-support-ai-backend-production.up.railway.app/orders/${order.orderId}`, {
             credentials: "include"
         })
         .then(response => {

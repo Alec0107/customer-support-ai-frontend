@@ -85,7 +85,7 @@ function Profile(){
     
     // FETCH PROFILE
     useEffect(() => {
-        fetch("https://customer-support-ai-backend-production.up.railway.app/auth/user-profile'",{
+        fetch("https://customer-support-ai-backend-production.up.railway.app/auth/user-profile",{
                     credentials: "include"
                 })
                 .then(response => {
@@ -107,7 +107,7 @@ function Profile(){
 
     // FETCH PROFILE DASHBOARD DATA
     useEffect(() => {
-        fetch("http://localhost:8080/orders/partial",{
+        fetch("https://customer-support-ai-backend-production.up.railway.app/orders/partial",{
                     credentials: "include"
                 })
                 .then(response => {

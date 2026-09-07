@@ -72,7 +72,7 @@ function Track(){
 
         useEffect(() => {
 
-            fetch("http://localhost:8080/deliveries/my-deliveries", {
+            fetch("https://customer-support-ai-backend-production.up.railway.app/deliveries/my-deliveries", {
                 credentials: "include"
             })
             .then(response => {
