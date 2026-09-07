@@ -1,6 +1,7 @@
 import "../component/OrderDetails.css"
 import closeDark from "../../../assets/cancel-dark.svg"
 import { useEffect, useState } from "react";
+import API from "../../../api/apiRoutes.js";
 
 
 function OrderDetails({ order, setSelectedOrder }) {

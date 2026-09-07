@@ -3,6 +3,7 @@ import "../css/Profile.css"
 import "../../../pages/loader.css"
 import SmallCard from "../../../components/SmallCard.jsx"
 import RecentOrders from "../../../components/RecentOrders.jsx"
+import API from "../api/apiRoutes.js";
 
 
 function Profile(){
@@ -107,7 +108,7 @@ function Profile(){
 
     // FETCH PROFILE DASHBOARD DATA
     useEffect(() => {
-        fetch("https://customer-support-ai-backend-production.up.railway.app/orders/partial",{
+        fetch(API.ORDERSPARTIAL,{
                     credentials: "include"
                 })
                 .then(response => {

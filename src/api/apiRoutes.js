@@ -6,6 +6,7 @@ const API = {
     USER_PROFILE: "/api/auth/user-profile",
 
     ORDERS: "/api/orders/my-orders",
+    ORDERSPARTIAL: "/api/orders/partial",
     ORDERID: (orderId) => `/api/orders/my-orders/${orderId}`,
     DELIVERIES: "/api/deliveries/my-deliveries",
     CHAT: "/api/chat",
