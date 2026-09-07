@@ -3,7 +3,7 @@ import "../css/Profile.css"
 import "../../../pages/loader.css"
 import SmallCard from "../../../components/SmallCard.jsx"
 import RecentOrders from "../../../components/RecentOrders.jsx"
-import API from "../api/apiRoutes.js";
+import API from "../../../api/apiRoutes.js";
 
 
 function Profile(){
