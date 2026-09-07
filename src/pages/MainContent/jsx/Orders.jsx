@@ -2,7 +2,7 @@ import "../css/Orders.css"
 import { useEffect, useState } from "react";
 import "../../../pages/loader.css"
 import OrderDetails from "../component/OrderDetails.jsx"
-import API from "../api/apiRoutes.js";
+import API from "../../../api/apiRoutes.js";
 
 function Orders(){
 
