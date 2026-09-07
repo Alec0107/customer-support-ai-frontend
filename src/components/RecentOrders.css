@@ -1,0 +1,56 @@
+.recent-order-row {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.right div{
+    letter-spacing: 1px;
+    font-style: sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.date-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.date-div h2{
+    margin: 0;
+
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.date-div p{
+    letter-spacing: 1px;
+    font-style: sans-serif;
+    font-size: 10px;
+    color: #777;
+}

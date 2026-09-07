@@ -1,0 +1,179 @@
+.profile-page {
+    width: 100%;
+    height: 100%;
+
+    padding: 25px 60px 60px 60px;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-header{
+    padding: 20px 0px;
+}
+
+.profile-header h2 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.profile-header p {
+    margin: 5px 0 0 0;
+
+    font-size: 14px;
+    color: #777;
+}
+
+.container{
+    height: 80%;
+    width: 100%;
+
+
+    display: flex;
+    gap: 20px;
+}
+
+.profile-card{
+    max-width: 20%;
+    min-width: 400px;
+
+    padding: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.profile-card.loading{
+    justify-content: center;
+}
+
+
+.profile-avatar{
+    height: 120px;
+    width: 120px;
+    margin-bottom: 50px;
+
+    border-radius: 50%;
+    background-color: black;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile-avatar span{
+    font-size: 50px;
+}
+
+.profile-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-row:first-child{
+    border-top: 1px solid #ddd;
+}
+
+
+.profile-row span{
+    font-size: 14px;
+    color: #666666;
+}
+
+
+.profile-row p{
+     font-size: 14px;
+}
+
+
+
+/* RIGHT CONTAINER */
+.right-container{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.right-top{
+    height: 30%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.right-bot{
+    height: 70%;
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    border-radius: 25px;
+    background: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.header{
+  width: 100%;  
+  padding: 10px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header p{
+    margin: 5px 0 0 0;
+
+    letter-spacing: 1px;
+    font-style: sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.row-container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    border-bottom: 1px solid #f0f0f0;
+}

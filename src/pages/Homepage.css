@@ -1,0 +1,13 @@
+.homepage{
+    width:100vw;
+    height:100vh;
+
+    background:#e9e9e9;
+    color: black;
+
+}
+
+.homepage.dark{
+    background:#262626;
+    color: white;   
+}

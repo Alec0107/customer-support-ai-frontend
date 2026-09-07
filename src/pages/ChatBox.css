@@ -1,0 +1,168 @@
+.chat-box{
+    width: 350px;
+    height: 500px;
+
+    border-radius: 10px 10px 0px 10px;
+    background:#FFFFFF;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    position: absolute;
+    right: 100px;
+    bottom: 110px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: white;
+    letter-spacing: 0.5px;
+    font-family: sans-serif;
+}
+
+.chat-box.dark{
+    background:#878787;
+}
+
+
+.chat-header{
+    width: 100%;
+    height: 50px;
+    background: #000000;
+    border-radius: 10px 10px 0px 0px;
+
+    padding: 0px 20px 0px 20px;
+    gap: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    font-weight: 400;
+}
+
+.chat-header h2{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.botIcon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.chat-messages{
+    flex: 1;
+    overflow-y: auto;
+
+}
+
+.chat-input{
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.chat-input input{
+    min-width: 300px;
+    padding: 10px;
+    outline: none;
+    height: 40px;
+    border-radius: 30px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.send-div{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: rgb(55, 55, 55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 30px;
+
+    cursor: pointer;
+
+}
+
+.send-div:hover{
+    background: black;
+}
+
+.send-div img{
+    width: 20px;
+    height: 20px;
+}
+
+.typing-message {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 15px;
+}
+
+.typing-bubble {
+
+    margin-left: 5px;
+
+    border-radius: 12px;
+}
+
+.typing {
+    display: flex;
+    align-items: center;
+    height: 17px;
+}
+
+.typing .dot {
+    width: 7px;
+    height: 7px;
+
+    margin-right: 4px;
+
+    background-color: #777;
+    border-radius: 50%;
+
+    animation: typingAnimation 1.8s infinite ease-in-out;
+}
+
+.typing .dot:nth-child(1) {
+    animation-delay: 200ms;
+}
+
+.typing .dot:nth-child(2) {
+    animation-delay: 300ms;
+}
+
+.typing .dot:nth-child(3) {
+    animation-delay: 400ms;
+}
+
+.typing .dot:last-child {
+    margin-right: 0;
+}
+
+@keyframes typingAnimation {
+    0% {
+        transform: translateY(0px);
+        opacity: 0.4;
+    }
+
+    28% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    44% {
+        transform: translateY(0px);
+        opacity: 0.4;
+    }
+}

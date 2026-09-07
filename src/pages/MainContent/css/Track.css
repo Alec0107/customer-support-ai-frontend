@@ -1,0 +1,189 @@
+.track-page {
+    width: 100%;
+    height: 100%;
+
+    padding: 25px 60px 60px 60px;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+    overflow-y: auto;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.track-header {
+ padding: 20px 0px;
+}
+
+.track-header h2 {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.track-header p {
+    margin: 5px 0 0 0;
+
+    font-size: 14px;
+    color: #777;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.track-page input {
+    width: 350px;
+    height: 42px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    margin-bottom: 30px;
+}
+
+.track-page input:focus {
+    border-color: #999;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+.shipment-section {
+    margin-bottom: 35px;
+}
+
+.shipment-section > h3 {
+    margin-bottom: 15px;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   CARD LIST
+========================= */
+
+/* .shipment-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+} */
+
+
+/* =========================
+   DELIVERY CARD
+========================= */
+
+.shipment-card {
+    width: 100%;
+
+    background: white;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    transition: 0.2s ease;
+
+    margin-bottom: 10px;
+}
+
+.shipment-card:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+
+/* TOP PART OF CARD */
+
+.shipment-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.shipment-card-header h3 {
+    margin: 0;
+
+    font-size: 17px;
+}
+
+
+/* STATUS */
+
+.shipment-status {
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    background: #eeeeee;
+}
+
+
+/* CARD TEXT */
+
+.shipment-card p {
+    margin: 8px 0;
+
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* VIEW DETAILS */
+
+.shipment-card button {
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 6px;
+
+    background: black;
+    color: white;
+
+    padding: 10px 16px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.shipment-card button:hover {
+    opacity: 0.8;
+}
+
+.no-shipments{
+    text-align: center;
+    padding: 50px 0;
+    color: #777;
+}
+
+
+.no-deliveries-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
