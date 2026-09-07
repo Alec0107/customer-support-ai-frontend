@@ -44,7 +44,7 @@ const introAI =
 
     useEffect(() => {
 
-        fetch("http://localhost:8080/chat/history", {
+        fetch("https://customer-support-ai-backend-production.up.railway.app/chat/history", {
             credentials: "include"
         })
         .then(response => response.json())
@@ -101,7 +101,7 @@ async function handleSend(e){
 
        setIsTyping(true);
 
-        fetch("http://localhost:8080/chat", {
+        fetch("https://customer-support-ai-backend-production.up.railway.app/chat", {
             method: "POST",
             credentials: "include",
             headers:{
