@@ -12,8 +12,8 @@ function LoginPage() {
 
 
     async function handleLogin(){
-        
-        const response = await fetch('http://localhost:8080/auth/login', {
+
+        const response = await fetch('https://customer-support-ai-backend-production.up.railway.app/auth/login', {
             method: 'POST',
             credentials: "include",
             headers: {
