@@ -7,6 +7,7 @@ import './App.css'
 import HomePage from './pages/Homepage'
 import LoginPage from './pages/Loginpage'
 import ProtectedRoute from './pages/ProtectedRoute'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
 
@@ -16,22 +17,27 @@ function App(){
   return (
 
     <BrowserRouter>
-
+    
       <Routes>
 
-        <Route 
-          path="/login" 
-          element={<LoginPage />} 
+        <Route
+          path="/"
+          element={<Navigate to="/login" replace />}
         />
 
-        <Route 
-          path="/homepage/*" 
+        <Route
+          path="/login"
+          element={<LoginPage />}
+        />
+
+        <Route
+          path="/homepage/*"
           element={
-                <ProtectedRoute>
-                  <HomePage></HomePage>
-                </ProtectedRoute>
-              } 
-          />
+            <ProtectedRoute>
+              <HomePage />
+            </ProtectedRoute>
+          }
+        />
 
       </Routes>
 
