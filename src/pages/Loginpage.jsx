@@ -13,7 +13,7 @@ function LoginPage() {
 
     async function handleLogin(){
 
-        const response = await fetch('https://customer-support-ai-backend-production.up.railway.app/auth/login', {
+        const response = await fetch('api/auth/login', {
             method: 'POST',
             credentials: "include",
             headers: {
