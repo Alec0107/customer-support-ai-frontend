@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
@@ -7,7 +7,7 @@ import './App.css'
 import HomePage from './pages/Homepage'
 import LoginPage from './pages/Loginpage'
 import ProtectedRoute from './pages/ProtectedRoute'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+
 
 
 
@@ -17,7 +17,7 @@ function App(){
   return (
 
     <BrowserRouter>
-    
+
       <Routes>
 
         <Route
