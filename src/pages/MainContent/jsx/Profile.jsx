@@ -85,7 +85,7 @@ function Profile(){
     
     // FETCH PROFILE
     useEffect(() => {
-        fetch("http://localhost:8080/auth/user-profile",{
+        fetch("https://customer-support-ai-backend-production.up.railway.app/auth/user-profile'",{
                     credentials: "include"
                 })
                 .then(response => {
