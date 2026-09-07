@@ -8,7 +8,7 @@ function ProtectedRoute({ children }){
 
     useEffect(() => {
 
-        fetch("https://customer-support-ai-backend-production.up.railway.app/auth/me",{
+        fetch("api/auth/me",{
             credentials: "include"
         })
         .then(response => {
