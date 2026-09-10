@@ -285,3 +285,11 @@
         box-sizing: border-box;
     }
 }
+
+@media (max-width: 768px) {
+
+    body:has(.chat-input input:focus) .navbar {
+        display: none;
+    }
+
+}
