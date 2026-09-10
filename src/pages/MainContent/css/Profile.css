@@ -178,6 +178,34 @@
     border-bottom: 1px solid #f0f0f0;
 }
 
+.profile-logout-button {
+    display: block;
+    width: 100%;
+    height: 50px;
+
+    margin-top: 24px;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+
+    background: #fafafa;
+    color: #333;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.profile-logout-button:active {
+    background: #eeeeee;
+}
+
+.profile-logout-button {
+    display: none;
+}
 
 /* =========================
    MOBILE RESPONSIVENESS
@@ -379,4 +407,18 @@
 
         overflow-y: auto;
     }
+    .profile-logout-button {
+        display: block;
+        width: 100%;
+        height: 52px;
+        margin-top: 18px;
+        border: none;
+        border-radius: 14px;
+        background: #111;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
 }

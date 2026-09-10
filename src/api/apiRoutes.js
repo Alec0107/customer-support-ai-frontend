@@ -1,7 +1,9 @@
 const API = {
     LOGIN: "/api/auth/login",
+    LOGOUT: "/api/auth/logout",
     REGISTER: "/api/auth/register",
     ME: "/api/auth/me",
+
 
     USER_PROFILE: "/api/auth/user-profile",
 

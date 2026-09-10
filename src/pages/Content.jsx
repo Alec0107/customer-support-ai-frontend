@@ -15,6 +15,7 @@ import Dashboard from "./MainContent/jsx/Dashboard.jsx"
 import Orders from "./MainContent/jsx/Orders.jsx"
 import Track from "./MainContent/jsx/Track.jsx"
 import Profile from "./MainContent/jsx/Profile.jsx"
+import API from "../api/apiRoutes.js";
 
 function Content(){
 
@@ -24,6 +25,23 @@ function Content(){
 
     const navigate = useNavigate();
 
+    async function handleLogout() {
+        try {
+            const response = await fetch(API.LOGOUT, {
+                method: "POST",
+                credentials: "include"
+            });
+
+            if (!response.ok) {
+                throw new Error("Logout failed");
+            }
+
+            navigate("/login");
+
+        } catch (error) {
+            console.log("Logout error:", error);
+        }
+    }
 
     return(
 
@@ -103,6 +121,13 @@ function Content(){
                     </button>
 
                 </div>
+
+                <button
+                    className="logout-button"
+                    onClick={handleLogout}
+                >
+                    Logout
+                </button>
 
             </div>
 
