@@ -157,8 +157,6 @@ function Orders(){
                                                 <button onClick={() => setSelectedOrder(order)}>
                                                     View Details
                                                 </button>
-                                                   <button>Esmiringhoy
-                                                </button>
                                             </div>
                                         )}
 
