@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 
+
 import "../css/Profile.css";
 import "../../../pages/loader.css";
 
@@ -11,7 +12,7 @@ import API from "../../../api/apiRoutes.js";
 
 function Profile() {
 
-    const navigate = useNavigate();
+
 
     const [userProfile, setUserProfile] = useState(null);
     const [loadingProfile, setLoadingProfile] = useState(true);
