@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+
 
 import "../css/Profile.css";
 import "../../../pages/loader.css";
@@ -32,7 +32,7 @@ function Profile() {
                 throw new Error("Logout failed");
             }
 
-            navigate("/login");
+            window.location.replace("/login");
 
         } catch (error) {
 

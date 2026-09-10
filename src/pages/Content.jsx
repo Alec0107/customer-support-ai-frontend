@@ -36,8 +36,7 @@ function Content(){
                 throw new Error("Logout failed");
             }
 
-            navigate("/login");
-
+             window.location.replace("/login");
         } catch (error) {
             console.log("Logout error:", error);
         }
