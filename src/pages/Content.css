@@ -1,17 +1,16 @@
-.parent-of-two{
+.parent-of-two {
     height: 100vh;
     width: 100vw;
-    
+
     display: flex;
-
-
-
 }
+
 
 /* =========================
    NAVBAR
    ========================= */
-.navbar{
+
+.navbar {
     height: 100vh;
     width: 320px;
 
@@ -23,11 +22,11 @@
     flex-direction: column;
 
     border-right: 1px solid #e5e5e5;
-
 }
 
 
 /* ShopFlow */
+
 .logo {
     margin: 0 0 60px 15px;
 
@@ -37,7 +36,9 @@
     font-weight: 700;
 }
 
-/* Container of the buttons */
+
+/* Container of buttons */
+
 .nav-links {
     display: flex;
     flex-direction: column;
@@ -45,13 +46,16 @@
     gap: 15px;
 }
 
-/* Every navigation button */
+
+/* Navigation button */
+
 .nav-button {
     width: 100%;
     height: 60px;
 
     border: none;
     background: transparent;
+
     transition: background-color 0.3s ease;
 
     display: flex;
@@ -72,25 +76,212 @@
     color: #878787;
 }
 
-/* Selected page */
+
+/* Active desktop page */
+
 .nav-button.active {
     background-color: black;
     color: white;
 }
 
-.nav-button:hover{
+
+.nav-button:hover {
     background: #f5f5f5;
 }
 
-.content{
-    flex: 1;
-    height: 100vh;
 
+.nav-button.active:hover {
+    background: black;
 }
 
 
-/* icons for each nav links */
-.icons{
+/* =========================
+   CONTENT
+   ========================= */
+
+.content {
+    flex: 1;
+
+    height: 100vh;
+}
+
+
+/* Icons */
+
+.icons {
     width: 25px;
     height: 25px;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .parent-of-two {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        display: block;
+    }
+
+
+    /* =========================
+       FLOATING ROUNDED NAVBAR
+       ========================= */
+
+    .navbar {
+        position: fixed;
+
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+
+        width: auto;
+        height: 75px;
+
+        padding: 7px;
+
+        box-sizing: border-box;
+
+        background: white;
+
+        border: 1px solid #e5e5e5;
+
+        /*
+            This makes the WHOLE navbar rounded
+        */
+        border-radius: 22px;
+
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+
+        z-index: 1000;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    /* Hide desktop logo */
+
+    .logo {
+        display: none;
+    }
+
+
+    /* =========================
+       NAV LINKS
+       ========================= */
+
+    .nav-links {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 5px;
+    }
+
+
+    /* =========================
+       NAV BUTTONS
+       ========================= */
+
+    .nav-button {
+        flex: 1;
+
+        width: auto;
+        height: 100%;
+
+        padding: 5px;
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 5px;
+
+        border-radius: 16px;
+
+        background: transparent;
+
+        color: #878787;
+
+        font-size: 11px;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       ACTIVE BUTTON
+       ========================= */
+
+    .nav-button.active {
+        background: black;
+        color: white;
+
+        font-weight: 600;
+
+        border-radius: 16px;
+    }
+
+
+    .nav-button:hover {
+        background: transparent;
+    }
+
+
+    .nav-button.active:hover {
+        background: black;
+    }
+
+
+    /* =========================
+       ICONS
+       ========================= */
+
+    .icons {
+        width: 22px;
+        height: 22px;
+
+        flex-shrink: 0;
+    }
+
+
+    .nav-button span {
+        font-size: 11px;
+
+        white-space: nowrap;
+    }
+
+
+    /* =========================
+       CONTENT
+       ========================= */
+
+    .content {
+        width: 100%;
+
+        height: auto;
+        min-height: 100vh;
+
+        /*
+            Navbar is floating,
+            so leave space underneath content.
+        */
+        padding-bottom: 110px;
+
+        box-sizing: border-box;
+    }
 }

@@ -148,3 +148,124 @@
 
 
 
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .orders-page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        padding: 20px 16px 100px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .orders-header {
+        padding: 10px 0 20px;
+    }
+
+    .orders-header h2 {
+        font-size: 24px;
+    }
+
+    .orders-header p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* =========================
+       TABLE WRAPPER
+       ========================= */
+
+    .orders-table-container {
+        width: 100%;
+
+        overflow-x: auto;
+        overflow-y: visible;
+
+        border-radius: 10px;
+
+        -webkit-overflow-scrolling: touch;
+    }
+
+
+    /* Keep table readable instead
+       of squeezing every column */
+    .orders-table {
+        min-width: 700px;
+    }
+
+
+    .orders-table th {
+        padding: 14px 16px;
+
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+
+
+    .orders-table td {
+        padding: 14px 16px;
+
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+
+
+    /* =========================
+       STATUS BADGES
+       ========================= */
+
+    .status-badge {
+        padding: 5px 9px;
+
+        font-size: 10px;
+    }
+
+
+    /* =========================
+       ACTION BUTTON
+       ========================= */
+
+    .more-button {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       ORDER MENU
+       ========================= */
+
+    .action-cell {
+        position: relative;
+    }
+
+    .order-menu {
+        right: 35px;
+        bottom: 5px;
+
+        width: 135px;
+
+        z-index: 100;
+    }
+
+    .order-menu button {
+        padding: 9px;
+
+        font-size: 12px;
+    }
+}

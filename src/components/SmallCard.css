@@ -78,3 +78,38 @@
     background-color: #5b7bd2;
 }
 
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .small-card {
+        min-height: 140px;
+
+        padding: 20px;
+
+        border-radius: 18px;
+
+        box-sizing: border-box;
+    }
+
+    .small-card h2 {
+        font-size: 32px;
+    }
+
+    .small-card p {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .progress-div {
+        gap: 10px;
+    }
+
+    .progress-bar {
+        height: 5px;
+    }
+}

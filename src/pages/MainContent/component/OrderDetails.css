@@ -219,3 +219,164 @@
 .delivery-information {
     border-bottom: 1px solid #e5e5e5;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       OVERLAY
+       ========================= */
+
+    .order-details-overlay {
+        width: 100%;
+        height: 100%;
+
+        z-index: 2000;
+    }
+
+
+    /* =========================
+       DRAWER
+       ========================= */
+
+    .order-details-drawer {
+        width: 100%;
+        height: 100%;
+
+        padding: 24px 18px 100px;
+
+        box-sizing: border-box;
+
+        overflow-y: auto;
+    }
+
+
+    /* =========================
+       HEADER
+       ========================= */
+
+    .order-details-header {
+        padding-bottom: 20px;
+
+        gap: 15px;
+    }
+
+    .order-details-header h2 {
+        font-size: 20px;
+    }
+
+    .order-details-header p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+
+    /* =========================
+       CLOSE BUTTON
+       ========================= */
+
+    .close-details-button {
+        width: 32px;
+        height: 32px;
+
+        flex-shrink: 0;
+
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       SECTIONS
+       ========================= */
+
+    .order-information,
+    .delivery-information,
+    .items-information {
+        padding: 24px 0;
+    }
+
+    .order-information h3,
+    .delivery-information h3,
+    .items-information h3 {
+        margin-bottom: 18px;
+
+        font-size: 15px;
+    }
+
+    .order-information p,
+    .delivery-information p {
+        font-size: 13px;
+
+        line-height: 1.4;
+    }
+
+
+    /* =========================
+       INFORMATION ROWS
+       ========================= */
+
+    .information-row {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin: 14px 0;
+
+        font-size: 13px;
+    }
+
+    .information-row span:first-child {
+        flex-shrink: 0;
+    }
+
+    .information-row span:last-child {
+        max-width: 60%;
+
+        text-align: right;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =========================
+       ORDER ITEMS
+       ========================= */
+
+    .item-row {
+        align-items: flex-start;
+
+        gap: 15px;
+
+        margin-bottom: 18px;
+    }
+
+    .item-name {
+        font-size: 14px;
+
+        overflow-wrap: anywhere;
+    }
+
+    .item-price {
+        font-size: 12px;
+    }
+
+    .item-subtotal {
+        font-size: 14px;
+
+        flex-shrink: 0;
+    }
+
+
+    /* =========================
+       TOTAL
+       ========================= */
+
+    .details-total {
+        padding-top: 20px;
+
+        font-size: 15px;
+    }
+}

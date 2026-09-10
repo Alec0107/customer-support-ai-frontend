@@ -177,3 +177,206 @@
     overflow-y: scroll;
     border-bottom: 1px solid #f0f0f0;
 }
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    /* =========================
+       PROFILE PAGE
+       ========================= */
+
+    .profile-page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        padding: 20px 16px 100px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    /* =========================
+       PAGE HEADER
+       ========================= */
+
+    .profile-header {
+        padding: 10px 0 20px;
+    }
+
+    .profile-header h2 {
+        font-size: 24px;
+    }
+
+    .profile-header p {
+        margin-top: 5px;
+
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+
+    /* =========================
+       MAIN CONTAINER
+       ========================= */
+
+    .container {
+        width: 100%;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 16px;
+    }
+
+
+    /* =========================
+       PROFILE CARD
+       ========================= */
+
+    .profile-card {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+
+        padding: 30px 20px;
+
+        border-radius: 18px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* Profile avatar */
+
+    .profile-avatar {
+        width: 90px;
+        height: 90px;
+
+        margin-bottom: 30px;
+    }
+
+    .profile-avatar span {
+        font-size: 38px;
+    }
+
+
+    /* =========================
+       PROFILE INFORMATION
+       ========================= */
+
+    .profile-info {
+        width: 100%;
+    }
+
+    .profile-row {
+        width: 100%;
+
+        padding: 18px 0;
+
+        gap: 15px;
+    }
+
+    .profile-row span {
+        font-size: 13px;
+
+        flex-shrink: 0;
+    }
+
+    .profile-row p {
+        margin: 0;
+
+        font-size: 13px;
+
+        text-align: right;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =========================
+       RIGHT DASHBOARD
+       ========================= */
+
+    .right-container {
+        width: 100%;
+
+        gap: 16px;
+    }
+
+
+    /* =========================
+       ORDER STAT CARDS
+       ========================= */
+
+    .right-top {
+        width: 100%;
+        height: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+
+    /*
+       If there are 3 cards:
+       Delivered + Processing on top
+       Shipped fills second row
+    */
+
+    .right-top > :last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+    }
+
+
+    /* =========================
+       RECENT ORDERS
+       ========================= */
+
+    .right-bot {
+        width: 100%;
+        height: auto;
+
+        min-height: 350px;
+
+        padding: 18px;
+
+        border-radius: 18px;
+
+        box-sizing: border-box;
+    }
+
+
+    .header {
+        padding: 10px 5px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+
+    /* =========================
+       ORDER ROWS
+       ========================= */
+
+    .row-container {
+        width: 100%;
+        height: auto;
+
+        max-height: 400px;
+
+        padding: 5px;
+
+        overflow-y: auto;
+    }
+}

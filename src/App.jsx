@@ -27,7 +27,7 @@ function App(){
 
         <Route
           path="/login"
-          element={<LoginPage />}
+          element={<HomePage/>}
         />
 
         <Route

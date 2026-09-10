@@ -20,10 +20,10 @@ function Homepage(){
 
       </Content>
 
-      <DarkModeButton 
+      {/* <DarkModeButton 
         isDarkMode={isDarkMode}
         setIsDarkMode={setIsDarkMode} 
-      />
+      /> */}
 
       <ChatWidget
         isChatBoxOpen={isChatBoxOpen}
@@ -33,6 +33,7 @@ function Homepage(){
 
       <ChatBox
         isChatBoxOpen={isChatBoxOpen}
+        setIsChatBoxOpen={setIsChatBoxOpen}
         isDarkMode={isDarkMode}
       />
 

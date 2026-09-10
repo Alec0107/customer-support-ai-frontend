@@ -8,7 +8,7 @@ import API from "../api/apiRoutes.js";
 
 
 //ChatBox Component
-function ChatBox({ isChatBoxOpen, isDarkMode }) {
+function ChatBox({ isChatBoxOpen, setIsChatBoxOpen, isDarkMode }) {
 
     // 1. State
 const [messages, setMessages] = useState([]);
@@ -147,8 +147,17 @@ async function handleSend(e){
 
             {/* Header of the chat box */}
             <div className="chat-header">
-                {/* <img className="botIcon" src={chatIcon} alt="Chat AI"></img> */}
+
                 <h2>ShopFlow Customer AI Support</h2>
+
+                <button
+                    className="mobile-chat-close"
+                    onClick={() => setIsChatBoxOpen(false)}
+                    type="button"
+                >
+                    ✕
+                </button>
+
             </div>
 
             {/* Message component inflated */}

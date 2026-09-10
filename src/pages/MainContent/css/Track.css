@@ -187,3 +187,92 @@
     align-items: center;
     justify-content: center;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .track-page {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+
+        padding: 20px 16px 100px;
+
+        overflow-y: visible;
+    }
+
+    .track-header {
+        padding: 10px 0 18px;
+    }
+
+    .track-header h2 {
+        font-size: 24px;
+    }
+
+    .track-header p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .track-page input {
+        width: 100%;
+        height: 44px;
+
+        margin-bottom: 24px;
+
+        box-sizing: border-box;
+    }
+
+    .shipment-section {
+        margin-bottom: 28px;
+    }
+
+    .shipment-section > h3 {
+        font-size: 17px;
+        margin-bottom: 12px;
+    }
+
+    .shipment-card {
+        padding: 16px;
+        margin-bottom: 12px;
+    }
+
+    .shipment-card-header {
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .shipment-card-header h3 {
+        font-size: 15px;
+    }
+
+    .shipment-status {
+        flex-shrink: 0;
+
+        padding: 5px 10px;
+
+        font-size: 11px;
+    }
+
+    .shipment-card p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .shipment-card button {
+        width: 100%;
+
+        margin-top: 14px;
+
+        padding: 11px 14px;
+    }
+
+    .no-shipments {
+        padding: 35px 10px;
+        font-size: 13px;
+    }
+}

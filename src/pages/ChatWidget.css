@@ -34,3 +34,39 @@
     height: 30px;
     cursor: pointer;
 }
+
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .chat-widget {
+        position: fixed;
+
+        width: 58px;
+        height: 58px;
+
+        /*
+         * Bottom navbar = 75px
+         * Put chatbot slightly above it
+         */
+        bottom: 90px;
+        right: 18px;
+
+        z-index: 1100;
+
+        border-radius: 50% 0% 50% 50%;
+    }
+
+    .botIconWidget {
+        width: 40px;
+        height: 40px;
+    }
+
+    .closeIcon {
+        width: 25px;
+        height: 25px;
+    }
+}

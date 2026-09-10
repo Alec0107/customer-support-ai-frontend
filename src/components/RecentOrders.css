@@ -54,3 +54,71 @@
     font-size: 10px;
     color: #777;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .recent-order-row {
+        width: 100%;
+
+        padding: 14px 0;
+
+        gap: 10px;
+    }
+
+
+    /* LEFT SIDE:
+       Date + Order information
+    */
+    .left {
+        gap: 14px;
+
+        justify-content: flex-start;
+
+        min-width: 0;
+    }
+
+
+    /* RIGHT SIDE:
+       Status / Price / other info
+    */
+    .right {
+        gap: 12px;
+
+        justify-content: flex-end;
+
+        flex-shrink: 0;
+    }
+
+    .right div {
+        font-size: 12px;
+
+        letter-spacing: 0.5px;
+    }
+
+
+    /* =========================
+       DATE
+       ========================= */
+
+    .date-div {
+        min-width: 35px;
+
+        flex-shrink: 0;
+    }
+
+    .date-div h2 {
+        font-size: 20px;
+    }
+
+    .date-div p {
+        margin: 2px 0 0;
+
+        font-size: 9px;
+
+        letter-spacing: 0.5px;
+    }
+}

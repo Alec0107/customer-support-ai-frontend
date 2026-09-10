@@ -67,3 +67,43 @@
 .message.assistant .message-content {
     align-items: flex-start;
 }
+
+/* =========================
+   MOBILE RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .message {
+        margin: 8px 12px;
+    }
+
+    .message-content {
+        /* Don't let a message take the entire screen width */
+        max-width: 82%;
+    }
+
+    .message-bubble {
+        padding: 10px 12px;
+
+        /* Slightly easier to read on phones */
+        font-size: 14px;
+        line-height: 1.45;
+
+        /* Prevent long text from overflowing */
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    .message-time {
+        margin-top: 3px;
+        font-size: 9px;
+    }
+
+    .botIcon {
+        /* Keep bot icon from taking too much room */
+        flex-shrink: 0;
+        margin-bottom: 8px;
+    }
+}
