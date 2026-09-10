@@ -52,12 +52,12 @@
          * Bottom navbar = 75px
          * Put chatbot slightly above it
          */
-        bottom: 90px;
+        bottom: 100px;
         right: 18px;
 
         z-index: 1100;
 
-        border-radius: 50% 0% 50% 50%;
+        border-radius: 50% 50% 50% 50%;
     }
 
     .botIconWidget {
