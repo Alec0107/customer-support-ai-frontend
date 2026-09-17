@@ -111,8 +111,9 @@ async function handleSend(e){
             body: JSON.stringify(newMessage)
         })
         .then(response => {
+            console.log(response.status)
             if(!response.ok){
-                throw new Error("Something went wrong")
+                throw new Error(`HTTP ${response.status}`);
             }
 
             return response.json();
@@ -125,7 +126,22 @@ async function handleSend(e){
             setIsTyping(false);
         })
         .catch(error => {
-            console.log("Error", error)
+            console.log("Error", error);
+
+            const errorMessage = {
+                id: Date.now(),
+                role: "assistant",
+                content: error.message === "HTTP 429"            
+                    ? "Sorry, the AI service has reached its usage limit. Please try again later."
+                    : "Sorry, the AI is temporarily unavailable. Please try again shortly.",
+             time: new Date().toLocaleTimeString("en-US", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: true
+                })
+            };
+
+            setMessages(prev => [...prev, errorMessage]);
             setIsTyping(false);
         })
 
