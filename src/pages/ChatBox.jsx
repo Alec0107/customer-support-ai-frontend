@@ -231,11 +231,12 @@ async function handleSend(e){
                 />
 
                 {/* <button>send</button> */}
-                <div 
-                    typeof="submit"
+                <button
+                    disabled={!input}
+                    type="submit"
                     className="send-div">
                     <img src={sendIcon}></img>
-                </div>
+                </button>
 
             </form>
 
