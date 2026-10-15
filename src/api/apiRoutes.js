@@ -1,4 +1,5 @@
-const BASE_URL = "https://customer-service-ai-production-c797.up.railway.app";
+
+const BASE_URL = "/api";
 
 const API = {
     LOGIN: `${BASE_URL}/auth/login`,

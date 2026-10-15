@@ -10,6 +10,7 @@ export default defineConfig({
         target: 'https://customer-service-ai-production-c797.up.railway.app',
         changeOrigin: true,
         secure: true,
+        rewrite: (path) => path.replace(/^\/api/, ''),
       },
     },
   },
